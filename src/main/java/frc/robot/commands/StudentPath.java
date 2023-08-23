@@ -14,6 +14,10 @@ public class StudentPath extends SequentialCommandGroup {
    * @param drivetrain The drivetrain subsystem on which this command will run
    */
   public StudentPath(Drivetrain drivetrain) {
-    addCommands();
+    addCommands(
+      // Type Here!!
+      new DriveDistance(1.0, 6, drivetrain)
+      
+    );
   }
 }
