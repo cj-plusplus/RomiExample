@@ -9,9 +9,7 @@ import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 
 public class ExamplePath extends SequentialCommandGroup {
   /**
-   * Creates a new Autonomous Drive based on time. This will drive out for a period of time, turn
-   * around for time (equivalent to time to turn around) and drive forward again. This should mimic
-   * driving out, turning around and driving back.
+   *
    *
    * @param drivetrain The drive subsystem on which this command will run
    */
