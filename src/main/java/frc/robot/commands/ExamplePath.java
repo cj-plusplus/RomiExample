@@ -15,8 +15,9 @@ public class ExamplePath extends SequentialCommandGroup {
    */
   public ExamplePath(Drivetrain drivetrain) {
     addCommands(
-        new DriveDistance(0.5, 6, drivetrain),
-        new TurnDegrees(0.5, 360, drivetrain),
-        new DriveDistance(-0.5, 6, drivetrain));
+      new DriveDistance(0.5,10, drivetrain),
+      new TurnDegrees(0.5, 150, drivetrain),
+      new DriveDistance(0.5, 10, drivetrain),
+      new TurnDegrees(0.5, 150, drivetrain));
   }
 }

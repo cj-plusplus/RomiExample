@@ -71,8 +71,8 @@ public class RobotContainer {
         .onFalse(new PrintCommand("Button A Released"));
 
     // Setup SmartDashboard options
-    m_chooser.setDefaultOption("Your Path! (Edit this one)", new StudentPath(m_drivetrain));
-    m_chooser.addOption("Testing Path", new ExamplePath(m_drivetrain));
+    m_chooser.setDefaultOption("Student Path", new StudentPath(m_drivetrain));
+    m_chooser.addOption("Example Path", new ExamplePath(m_drivetrain));
     SmartDashboard.putData(m_chooser);
   }
 
