@@ -16,8 +16,23 @@ public class StudentPath extends SequentialCommandGroup {
   public StudentPath(Drivetrain drivetrain) {
     addCommands(
       // Type Here!!
-      new DriveDistance(1.0, 6, drivetrain)
-      
+      new DriveDistance(.5, 24.5, drivetrain),
+      new TurnDegrees(.5, 80, drivetrain),
+      new DriveDistance(.5, 10, drivetrain),
+      new TurnDegrees(-.5, 70, drivetrain),
+      new DriveDistance(.5, 12, drivetrain)
+    );
+    reverseStudentPath(drivetrain);
+  }
+
+  public void reverseStudentPath(Drivetrain drivetrain) {
+    addCommands(
+      // Type Here!!
+      new DriveDistance(-.5, 10, drivetrain),
+      new TurnDegrees(.5, 70, drivetrain),
+      new DriveDistance(-.5, 10, drivetrain),
+      new TurnDegrees(-.5, 60, drivetrain),
+      new DriveDistance(-.5, 23.5, drivetrain) 
     );
   }
 }
